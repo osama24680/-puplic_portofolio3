@@ -14,8 +14,11 @@
     text-decoration: none;
     transition: 0.4s
 }
-body{
-    overflow: hidden;
+html{
+    overflow-x: hidden;
+}
+body {
+    overflow:hidden;
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
