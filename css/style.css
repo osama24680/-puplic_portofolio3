@@ -14,12 +14,15 @@
     text-decoration: none;
     transition: 0.4s
 }
-html{
+
+html {
     overflow-x: hidden;
 }
+
 body {
-    overflow:hidden;
+    overflow: hidden;
 }
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -147,6 +150,11 @@ header .slider .layer .header_content h1 {
 header .slider .layer .header_content h2 {
     font-style: normal;
     font-size: 24px;
+}
+
+.barIcon {
+    font-size: 2rem;
+    display: none;
 }
 
 /* =======================--------------------------about----------------------------------======================== */
@@ -889,8 +897,38 @@ header .slider .layer .header_content h2 {
 }
 
 @media (max-width:768px) {
-    header .slider .layer .navbar .nav_list {
+
+    /* header .slider .layer .navbar .nav_list {
         display: none;
+    } */
+    .barIcon {
+        font-size: 2rem;
+        display: block;
+        cursor: pointer
+    }
+
+    header .slider .layer .navbar .nav_list {
+        position: absolute;
+        top: 15%;
+        background: #333;
+        border-top: .1rem solid rgba(255, 2555, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        flex-direction: column;
+        width: 95%;
+    }
+
+    header .slider .layer .navbar .nav_list.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
+
+    header .slider .layer .navbar .nav_list li {
+        display: block;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: .5rem 0;
+        background: #222;
     }
 
     .about .about_information {
